@@ -8,24 +8,28 @@ function typeWriter() {
   switch(window.location.pathname) {
     case '/':
       txt = 'Hello traveler.. Welcome to my little corner of the web..';
+      type();
       break;
     case '/#Stats':
       txt = 'Stats';
+      type();
       break;
   }
 
-  if (i < txt.length) {
-    document.getElementById("demo").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-    if (i == 16) {
-    	document.getElementById("demo").innerHTML += '<br><br>';
-    	i++;
+  function type() {
+    if (i < txt.length) {
+      document.getElementById("demo").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+      if (i == 16) {
+      	document.getElementById("demo").innerHTML += '<br><br>';
+      	i++;
+      }
+    } else { 
+    	document.getElementById("arrow").innerHTML += arrow;
+    	document.getElementById("arrow").className = "blinking";
+    	blinker();
     }
-  } else { 
-  	document.getElementById("arrow").innerHTML += arrow;
-  	document.getElementById("arrow").className = "blinking";
-  	blinker();
   }
 }
 
