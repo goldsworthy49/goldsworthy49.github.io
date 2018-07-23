@@ -1,0 +1,62 @@
+body {
+	background-image: url("../img/castle.jpeg");
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+img #background {
+   z-index: -1;
+}
+
+nav {
+	background-color: transparent !important;
+	padding: 5px;
+}
+
+h1 {
+  text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+.nav-wrapper a {
+	color: #fff !important;
+}
+
+#sidebutton {
+	margin: 5px;
+}
+
+.social-icons {
+	margin: auto;
+}
+
+#soc-button {
+	margin-top: 50px;
+	font-size: 30px;
+	text-align: right;
+}
+
+#soc-container {
+	float: right;
+	display: inline;
+	margin-right: 5px;
+}
+
+/* Custom Font */
+@font-face {
+	font-family: 'Yoster Island';
+	src: url('../fonts/yoster.ttf'); 
+}
+
+#main {
+	margin-left: 310px;
+	margin-right: 310px;
+	margin-top: 50px;
+	font-size: 4.0em;
+	color: white;
+	font-family: "Yoster Island", "Courier New", Courier, monospace;
+}
+
+#arrow {
+	text-align: center;
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="description" content="My web dev portfolio" />
+	<meta charset="utf-8">
+	<title>Hire Me RPG</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Lexie Brown">
+	<link href="data:image/x-icon;base64,AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAuLe2AKajnwD8/PcAGzNKADAwLwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAVVAAAAAAAABSUAAAAAAAAFVEAABVAAAAAERAVSUAAAAABEUiUAAAAAAAUlUAAAAAAAUlE1AAAAAABSUxNQAAAABSUFMTUAAAAFUABTE1AAAAAAAAUxNQAAAAAAAFMTUAAAAAAABTE1AAAAAAAAUxNQAAAAAAAFMVAAAAAAAABVUf/wAAH/8AAA8/AADEPwAA4H8AAPD/AADgfwAA4D8AAMQfAADODwAA/wcAAP+DAAD/wQAA/+AAAP/wAAD/+AAA" rel="icon" type="image/x-icon" />
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/brands.css" integrity="sha384-SYNjKRRe+vDW0KSn/LrkhG++hqCLJg9ev1jIh8CHKuEA132pgAz+WofmKAhPpTR7" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/fontawesome.css" integrity="sha384-0b7ERybvrT5RZyD80ojw6KNKz6nIAlgOKXIcJ0CV7A6Iia8yt2y1bBfLBOwoc9fQ" crossorigin="anonymous">
+	<script src="js/script.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+	<!-- Social Media links -->
+	<div id="soc-container">
+		<div class="social-icons" id="social-icons">
+			<a href="https://www.linkedin.com/in/goldsworthy-io" target="_blank" ><i class="fab fa-linkedin fa-3x" title="LinkedIn" style="color: #000"></i></a>
+			<a href="https://github.com/holidayblue" target="_blank" ><i class="fab fa-github-square fa-3x" title="GitHub" style="color: #000"></i></a>
+		</div>
+	</div>
+
+	<!-- Slide nav -->
+	<ul id="slide-out" class="sidenav black">
+		<li><div class="user-view">
+			<div class="background">
+				<!-- <img src="img/dice.jpeg"> -->
+			</div>
+			<a href="#"><img class="circle" src="img/me.png" height="60px"></a>
+			<a><span class="white-text name" style="font-size: 22px">Lexie Brown</span></a>
+			<span class="white-text name">Full Stack Developer</span>
+		</div></li>
+		<li><a href="#!" id="soc-button" class="red-text text-lighten-1"><i class="large material-icons red-text text-lighten-1">person</i>Stats</a></li>
+		<li><a href="#!" id="soc-button" class="teal-text text-lighten-1"><i class="large material-icons teal-text text-lighten-1">web</i>Inventory</a></li>
+		<li><a href="#!" id="soc-button" class="yellow-text text-darken-1"><i class="large material-icons yellow-text text-darken-1">palette</i>Skills</a></li>
+		<li><a href="#!" id="soc-button" class="cyan-text text-lighten-2"><i class="large material-icons cyan-text text-lighten-2">school</i>Lore</a></li>
+	</ul>
+	<div id="sidebutton">
+		<a href="#" data-target="slide-out" class="waves-effect waves-light btn-large black sidenav-trigger"><i class="material-icons">menu</i></a>
+	</div>
+
+	<!-- Main Content -->
+	<div id="main">
+		<h1 id="demo"></h1>
+		<h1 id="arrow"></h1>
+	</div>
+
+	<!-- Fixed Action Button at bottom right corner -->
+	<div class="fixed-action-btn">
+		<a href="#modal1" data-target="modal1" class="btn-floating black btn-large modal-trigger"><i class="large material-icons">mail</i></a>
+	</div>
+
+	<!-- Button popup -->
+	<div id="modal1" class="modal">
+		<div class="modal-content">
+			<h4>Contact</h4>
+			<p>Send me a message, and I'll get back to you ASAP.</p>
+			<form>
+				<div class="row">
+				<div class="input-field col s12">
+						<select>
+							<option value="" disabled selected>Choose topic</option>
+							<option value="1">Employment Opportunity</option>
+							<option value="2">Website Request</option>
+							<option value="3">Other</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<input id="name" type="text" class="validate">
+						<label for="name">Name</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<input id="email" type="email" class="validate">
+						<label for="email">Email</label>
+					</div>
+				</div>
+				<div class="row">
+					<form class="col s12">
+						<div class="row">
+							<div class="input-field col s12">
+								<textarea id="textarea1" class="materialize-textarea"></textarea>
+								<label for="textarea1">Message</label>
+							</div>
+						</div>
+					</form>
+				</div>
+			</form>
+		</div>
+		<div class="modal-footer">
+			<a href="#!" class="modal-close waves-effect waves-green btn-flat">SEND</a>
+		</div>
+	</div>
+
+	<!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <script>
+    	$(document).ready(function(){
+    		$('.fixed-action-btn').floatingActionButton();
+    		$('.modal').modal();
+    		$('.sidenav').sidenav();
+    		$('select').formSelect();
+    		$('#textarea1').val('New Text');
+  			M.textareaAutoResize($('#textarea1'));
+  			typeWriter();
+  			console.log(window.location.pathname);
+    	});
+    </script>
+
+</body>
+</html>
