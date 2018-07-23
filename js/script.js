@@ -5,6 +5,7 @@ var speed = 50; /* The speed/duration of the effect in milliseconds */
 
 function typeWriter() {
 
+  console.log(window.location.pathname);
   switch(window.location.pathname) {
     case '/':
       txt = 'Hello traveler.. Welcome to my little corner of the web..';
