@@ -9,6 +9,9 @@ function typeWriter() {
     case '/':
       txt = 'Hello traveler.. Welcome to my little corner of the web..';
       break;
+    case '/#Stats':
+      txt = 'Stats';
+      break;
   }
 
   if (i < txt.length) {
