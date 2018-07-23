@@ -15,23 +15,23 @@ function typeWriter() {
       type();
       break;
   }
+}
 
-  function typeHello() {
+function typeHello() {
     if (i < txt.length) {
       document.getElementById("demo").innerHTML += txt.charAt(i);
       i++;
       setTimeout(typeWriter, speed);
       if (i == 16) {
-      	document.getElementById("demo").innerHTML += '<br><br>';
-      	i++;
+        document.getElementById("demo").innerHTML += '<br><br>';
+        i++;
       }
     } else { 
-    	document.getElementById("arrow").innerHTML += arrow;
-    	document.getElementById("arrow").className = "blinking";
-    	blinker();
+      document.getElementById("arrow").innerHTML += arrow;
+      document.getElementById("arrow").className = "blinking";
+      blinker();
     }
   }
-}
 
 function blinker() {
 	$('.blinking').fadeOut(1000);
