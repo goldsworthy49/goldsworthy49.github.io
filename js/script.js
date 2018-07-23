@@ -10,7 +10,7 @@ function typeWriter() {
       txt = 'Hello traveler.. Welcome to my little corner of the web..';
       type();
       break;
-    case '/#Stats':
+    case '/#stats.html':
       txt = 'Stats';
       type();
       break;
