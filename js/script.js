@@ -16,7 +16,7 @@ function typeWriter() {
       break;
   }
 
-  function type() {
+  function typeHello() {
     if (i < txt.length) {
       document.getElementById("demo").innerHTML += txt.charAt(i);
       i++;
