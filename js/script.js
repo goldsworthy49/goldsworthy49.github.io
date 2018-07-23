@@ -1,9 +1,16 @@
 var i = 0;
-var txt = 'Hello traveler.. Welcome to my little corner of the web..'; /* The text */
+var txt = ''; /* The text */
 var arrow = ' &#x25BF;';
 var speed = 50; /* The speed/duration of the effect in milliseconds */
 
 function typeWriter() {
+
+  switch(window.location.pathname) {
+    case '/':
+      txt = 'Hello traveler.. Welcome to my little corner of the web..';
+      break;
+  }
+
   if (i < txt.length) {
     document.getElementById("demo").innerHTML += txt.charAt(i);
     i++;
