@@ -8,7 +8,7 @@ function typeWriter() {
   switch(window.location.pathname) {
     case '/':
       txt = 'Hello traveler.. Welcome to my little corner of the web..';
-      type();
+      typeHello();
       break;
     case '/#stats.html':
       txt = 'Stats';
@@ -31,7 +31,7 @@ function typeHello() {
       document.getElementById("arrow").className = "blinking";
       blinker();
     }
-  }
+}
 
 function blinker() {
 	$('.blinking').fadeOut(1000);
