@@ -23,7 +23,9 @@ h1 {
 }
 
 #sidebutton {
-	margin: 5px;
+	margin-top: -3em;
+	margin-left: 0.5em;
+	position: fixed;
 }
 
 .social-icons {
@@ -38,8 +40,10 @@ h1 {
 
 #soc-container {
 	float: right;
+	position: fixed;
 	display: inline;
-	margin-right: 5px;
+	margin-left: 79em;
+	margin-top: -3em;
 }
 
 /* Custom Font */
@@ -52,9 +56,14 @@ h1 {
 	margin-left: 310px;
 	margin-right: 310px;
 	margin-top: 50px;
+	padding-top: 50px;
 	font-size: 4.0em;
 	color: white;
 	font-family: "Yoster Island", "Courier New", Courier, monospace;
+}
+
+.stats {
+	padding-top: 100px;
 }
 
 #arrow {
