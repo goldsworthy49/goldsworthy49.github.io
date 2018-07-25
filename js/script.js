@@ -1,15 +1,17 @@
 var i = 0;
-var txt = 'Hello traveler.. Welcome to my little corner of the web..'; /* The text */
+var txt = 'Hello traveler.. Welcome to my little corner of the web..';
 var arrow = ' &#x25BF;';
-var speed = 50; /* The speed/duration of the effect in milliseconds */
+var speed = 50;
 
 var statsTxt = "Name: Lexie Brown<br>DOB: November 3, 1995<br>Location: Bloomington, IN<br>"
+              + "Undergrad: Miami University<br>"
               + "<br>BS in Computer Science<br>~4 years of programming<br>"
               + "<br>Interests: musical instruments, fencing, reality TV (especially Big Brother), "
-              + "true crime, card games, and The Beatles<br>";
-var inventoryTxt = "Inventory<br><br>Aenean ultrices facilisis mauris scelerisque mattis.<br>";
-var skillsTxt = "Skills<br><br>Donec volutpat accumsan congue. Nam efficitur aliquam lorem.<br>";
-var loreTxt = "Lore<br><br>Nunc nec enim mollis, vulputate dui vel, ultricies tellus. Sed tincidunt urna eros, ut tincidunt erat placerat ac. Ut eget turpis eget sapien tincidunt condimentum.<br>";
+              + "true crime, card games, and The Beatles<br><br><br><br><br>";
+var inventoryTxt = "This is where I'll post my latest projects.<br>Under construction..<br><br><br><br><br>";
+var skillsTxt = "<br><br><br><br><br>";
+var loreTxt = "Teaching Assistant<br>(1/18 - 5/18)<br>Systems I: Intro to Operating Systems and Systems Programming<br>"
+              + "<br>Teaching Assistant<br>(1/18 - 5/18)<br>Data Communications and Networks<br><br><br><br><br>";
 
 function typeWriter() {
   if (i < txt.length) {
@@ -39,15 +41,23 @@ function addStats() {
 }
 
 function addInventory() {
-  document.getElementById("inventory").innerHTML += inventoryTxt;
+  document.getElementById("inventory").innerHTML += "Inventory<br>";
+  document.getElementById("inventoryTxt").style.fontSize += "0.6em";
+  document.getElementById("inventoryTxt").innerHTML += inventoryTxt;
 }
 
 function addSkills() {
-  document.getElementById("skills").innerHTML += skillsTxt;
+  document.getElementById("skills").innerHTML += "Skills<br>";
+  document.getElementById("skillsTxt").style.visibility = "visible";
+  document.getElementById("skillsTxt").style.fontSize += "0.2em";
+  document.getElementById("skillsTxt").style.textAlign = "center";
+  document.getElementById("skillsTxt").innerHTML += skillsTxt;
 }
 
 function addLore() {
-  document.getElementById("lore").innerHTML += loreTxt;
+  document.getElementById("lore").innerHTML += "Lore<br>";
+  document.getElementById("loreTxt").style.fontSize += "0.6em";
+  document.getElementById("loreTxt").innerHTML += loreTxt;
 }
 
 function blinker() {
