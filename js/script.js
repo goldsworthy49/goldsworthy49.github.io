@@ -1,5 +1,5 @@
 var i = 0;
-var txt = 'Hello traveler.. Welcome to my little corner of the web..';
+var txt = 'Hello traveler.. Thank you for stopping by..';
 var arrow = ' &#x25BF;';
 var speed = 50;
 
