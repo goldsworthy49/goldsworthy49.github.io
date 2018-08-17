@@ -8,7 +8,10 @@ var statsTxt = "Name: Lexie Brown<br>DOB: November 3, 1995<br>Location: Blooming
               + "<br>BS in Computer Science<br>~4 years of programming<br>"
               + "<br>Interests: musical instruments, fencing, reality TV (especially Big Brother), "
               + "true crime, card games, and The Beatles<br><br><br><br><br>";
-var inventoryTxt = "This is where I'll post my latest projects.<br>Under construction..<br><br><br><br><br>";
+var inventoryTxt = "A dynamic and comprehensive map of European businesses for the "
+                  + "European American Chamber of Commerce in the Greater Cincinnati region"
+                  + "<br>Developed with Leaflet (JS) and OpenStreetMaps"
+                  + "<br><br><br><br><br>";
 var skillsTxt = "<br><br><br><br><br>";
 var loreTxt = "Teaching Assistant<br>(1/18 - 5/18)<br>Systems I: Intro to Operating Systems and Systems Programming<br>"
               + "<br>Teaching Assistant<br>(1/18 - 5/18)<br>Data Communications and Networks<br><br><br><br><br>";
@@ -43,6 +46,8 @@ function addStats() {
 function addInventory() {
   document.getElementById("inventory").innerHTML += "Inventory<br>";
   document.getElementById("inventoryTxt").style.fontSize += "0.6em";
+  document.getElementById("proj1").style.fontSize += "0.7em";
+  document.getElementById("proj1").innerHTML += '<a href="https://eacc-449.github.io/leaflet-maps-with-google-sheets/" target="_blank">European Investment Map</a>';
   document.getElementById("inventoryTxt").innerHTML += inventoryTxt;
 }
 
