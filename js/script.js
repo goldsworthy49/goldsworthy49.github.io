@@ -6,7 +6,7 @@ var speed = 50;
 var statsTxt = "Name: Lexie Brown<br>DOB: 3 Nov 95<br>Location: Bloomington, IN<br>"
               + "Education: Miami University<br>"
               + "<br>BS in Computer Science<br>~7 years of programming<br>"
-              + "<br>Interests: archiving, musical instruments, American history, podcasts, card games, and The Beatles<br><br><br><br><br>";
+              + "<br>Interests: archiving, musical instruments, American history, podcasts, Taylor Swift, and The Beatles<br><br><br><br><br>";
 var loreTxt = "Lead Operator (10/20 - present)<br>Memnon Archiving Services<br>"
               + "<br>Digitization Operator (10/18 - 10/20)<br>Memnon Archiving Services<br>"
               + "<br>Teaching Assistant (1/18 - 5/18)<br>Systems I: Intro to Operating Systems and Systems Programming<br>"
